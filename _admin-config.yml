@@ -1,0 +1,5 @@
+# hexo-admin authentification
+admin:
+    username: istarboy
+    password_hash: $2a$10$Rq.s3UKnPWvrRUlylpRZZOwvE5tpNVncZx35MsaK/nQhlCRt1gxXG
+    secret: wodejiamicookieshahai
