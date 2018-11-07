@@ -7,9 +7,9 @@ tags:
 categories: []
 date: 2018-11-05 23:04:00
 ---
-`谷歌报错 ERR_SSL_PROTOCOL_ERROR`
+谷歌报错 ERR_SSL_PROTOCOL_ERROR
 
-`火狐报错 SSL 接收到一个超出最大准许长度的记录[ssl_error_rx_record_too_long]`
+火狐报错 SSL 接收到一个超出最大准许长度的记录[ssl_error_rx_record_too_long]
 <!-- more -->
 
 # 解决方案
