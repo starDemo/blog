@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-keywords:
-author: John Doe
-language:
-timezone:
+title: Zone 
+subtitle: 
+description: 一个技术狂热者的备忘录
+keywords: 技术宅 Linux 运维 嵌入式 IOT
+author: star liu
+language: 
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://blog.istarboy.cc
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:

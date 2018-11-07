@@ -1,5 +1,5 @@
 title: 迁移后测试发布信息
-author: John Doe
+author: 
 tags: []
 categories: []
 date: 2018-11-02 08:50:00
