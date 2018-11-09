@@ -83,9 +83,9 @@ comment:
   # Youyan  site: http://www.uyan.cc/
   youyan_uid: 
   # Valine  site: https://valine.js.org/
-  valine_appId: 
-  valine_appKey: 
-  valine_placeHolder: 
+  valine_appId: tQFpTbcfHvOvMo7zNf49MRyS-gzGzoHsz 
+  valine_appKey: RbkBsdlyfTc7PlTL0dnsJs27 
+  valine_placeHolder: "快来留下你的想法吧～" 
 
 # ========== Analytics ========== #
 # enable Busuanzi analytics
