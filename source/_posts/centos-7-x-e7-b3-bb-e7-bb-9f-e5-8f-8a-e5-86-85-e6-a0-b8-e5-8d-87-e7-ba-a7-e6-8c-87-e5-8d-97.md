@@ -1,4 +1,3 @@
----
 title: CentOS 7. × 系统及内核升级指南
 url: 3610.html
 id: 3610
@@ -7,11 +6,10 @@ categories:
 date: 2018-08-30 13:27:35
 tags:
 ---
-
 转载自简书 用作技术备忘 
 
 最近在学习 Docker,想在服务器上实践一下.Docker 需要安装在 CentOS 7 64 位的平台，并且内核版本不低于 3.10。 CentOS 7 满足最低内核的要求，但由于 CentOS 7 内核版本比较低，部分功能（如 `overlay2` 存储层驱动）无法使用，并且部分功能可能不太稳定.需要升级到最新的 CentOS 版本,并且内核也更新到最新的稳定版本.这是我对升级 CentOS 系统版本及内核的记录,方便以后查阅,也分享给大家.
-
+<!--more-->
 > 注意:这篇文章只在 CentOS 7.× 系列版本上验证过,其他 CentOS 版本请谨慎使用.
 
 我的服务器是腾讯云云主机,系统为 CentOS 7.1,系统内核版本为 3.10,我在写这篇博客的时候最新的 CentOS 版本为 CentOS 7.3,而 [The Linux Kernel Archives](https://link.jianshu.com?t=https://www.kernel.org/) 上提供的最新稳定的系统内核为 4.12 版本.所以就把我的服务器系统升级为最新的 CentOS 7.3 版本,系统内核升级为 4.12 版本.

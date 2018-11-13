@@ -1,4 +1,3 @@
----
 title: golang 写入文件的一些备忘
 url: 3617.html
 id: 3617
@@ -7,7 +6,8 @@ categories:
 date: 2018-09-11 17:47:47
 tags:
 ---
-
+go学习过程中的笔记
+<!--more-->
 操作函数 os.OpenFile
 
 os.O\_WRONLY | os.O\_CREATE | O_EXCL          
