@@ -1,9 +1,9 @@
 title: Nginx HTTPS访问错误解决方案
 author: star liu
 tags:
-  - linux
   - 运维
   - ngin x
+  - Linux
 categories: []
 date: 2018-11-05 23:04:00
 ---
