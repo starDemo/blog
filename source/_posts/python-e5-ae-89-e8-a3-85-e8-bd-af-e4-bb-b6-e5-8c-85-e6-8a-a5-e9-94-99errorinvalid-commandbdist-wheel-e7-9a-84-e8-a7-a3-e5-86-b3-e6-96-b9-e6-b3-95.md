@@ -11,10 +11,9 @@ tags:
 ---
 
 
-
+<!--more-->
 # 原因：
 pip和setuptools的版本较低。 
-<!--more-->
 # 解决方案：
 升级pip和setuptools。 
 

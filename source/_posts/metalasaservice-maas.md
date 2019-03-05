@@ -1,4 +1,3 @@
----
 title: Metal-as-a-Service (MAAS)
 url: 3607.html
 id: 3607
@@ -8,9 +7,8 @@ categories:
 date: 2018-08-12 18:03:45
 tags:
 ---
-
-* * *
-
+Explain for the MAAS（Ubuntu）
+<!--more-->
 By Forrest Stroud
 
 Metal-as-a-Service (MASS) is a provisioning construct created by Canonical, developers of the Ubuntu Linux-based operating system. MAAS is designed to help facilitate and automate the deployment and dynamic provisioning of hyperscale computing environments such as big data workloads and cloud services.  

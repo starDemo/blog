@@ -1,4 +1,3 @@
----
 title: Mysql（mariadb）集群测试
 url: 3340.html
 id: 3340
@@ -7,7 +6,8 @@ categories:
 date: 2016-03-01 23:16:02
 tags:
 ---
-
+测试MariaDB搭建集群
+<!--more-->
 测试环境：Vmware （Centos 7 x3）
 
 1.修改Centos的软件源，添加MariaDB的软件源，并安装MariaDB-Galera-server

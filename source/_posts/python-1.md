@@ -1,4 +1,3 @@
----
 title: 初学Python o(∩_∩)o 、
 url: 3329.html
 id: 3329
@@ -7,7 +6,8 @@ categories:
 date: 2016-02-08 19:16:20
 tags:
 ---
-
+Python练习一波
+<!--more-->
 ### 练习之前应该知道的
 
 *   Linux命令行将以 \\$ 开始，比如 \\$ls, $python

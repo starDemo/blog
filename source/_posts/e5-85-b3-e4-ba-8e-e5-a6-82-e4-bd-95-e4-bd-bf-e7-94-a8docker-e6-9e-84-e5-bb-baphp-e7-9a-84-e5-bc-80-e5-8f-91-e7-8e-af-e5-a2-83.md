@@ -1,4 +1,3 @@
----
 title: 关于如何使用Docker构建PHP的开发环境
 url: 16.html
 id: 16
@@ -7,8 +6,9 @@ categories:
 date: 2015-12-30 23:24:46
 tags:
 ---
-
- 本文作者是Geoffrey，他是一个PHP的Web开发者，喜欢DevOps和Docker。本文主要介绍了如何使用Docker构建PHP的开发环境，文中作者也探讨了构建基于Docker的开发环境应该使用单容器还是多容器，各有什么利弊。推荐PHP开发者阅读。   本文由php100.com dockerone翻译，本博属应用转载。
+使用Docker 构建PHP运行开发环境 （碳素云实习期间实践）
+<!--more-->
+本文作者是Geoffrey，他是一个PHP的Web开发者，喜欢DevOps和Docker。本文主要介绍了如何使用Docker构建PHP的开发环境，文中作者也探讨了构建基于Docker的开发环境应该使用单容器还是多容器，各有什么利弊。推荐PHP开发者阅读。   本文由php100.com dockerone翻译，本博属应用转载。
 现在很多开发者都使用Vagrant来管理他们的虚拟机开发环境，Vagrant确实很酷， 不过也有不少缺点（最主要的是它占用太多的资源）。在容器技术、Docker和更多类Docker技术出现后，解决这个问题就变得简单了。
 
 免责声明
