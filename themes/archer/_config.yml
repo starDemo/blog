@@ -99,8 +99,7 @@ baidu_analytics:
 # Google analytics
 google_analytics: 
 # CNZZ analytics
-CNZZ_analytics: 
-
+CNZZ_analytics: '1276464642'
 # ========== Others ========== #
 # favicon
 favicon: /assets/favicon.ico
