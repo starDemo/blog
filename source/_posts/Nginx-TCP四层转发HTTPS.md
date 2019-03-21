@@ -1,12 +1,15 @@
-title: 'Nginx TCP四层转发HTTPS '
-author: star liu
+---
+title: Nginx TCP四层转发HTTPS
 tags:
-  - N g i n x
+  - nginx
 categories:
   - 运维
   - Linux
+toc: false
+author: star liu
 date: 2019-01-14 16:42:00
 ---
+
 奇怪的使用场景用到了nginx的四层代理转发
 
 <!--more-->
