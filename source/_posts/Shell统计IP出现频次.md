@@ -1,12 +1,17 @@
+---
 title: Shell统计IP出现频次
-author: star liu
-copyright: false
-tags: []
+tags:
+  - 运维
 categories:
   - Linux
   - 运维
+  - Shell
+toc: false
+author: star liu
+copyright: false
 date: 2019-03-15 14:46:00
 ---
+
 统计文件或者系统内IP出现频率
 <!--more-->
 ## 统计文件里的IP
