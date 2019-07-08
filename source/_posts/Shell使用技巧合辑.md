@@ -1,4 +1,3 @@
----
 title: Shell使用技巧合辑
 tags:
   - 运维
@@ -10,7 +9,6 @@ categories:
 toc: false
 date: 2019-04-22 13:49:06
 ---
-
 记录一些使用Shell的技巧
 <!--more-->
 ## Shell中的文字处理
@@ -25,8 +23,8 @@ kubectl get secrets -n test test -ojson
 kubectl get secrets -n test test -ojson|jq '.data.passwd'
 "aGVsbG8="
 ```
-Data
 ```json
+# JSON Data
 {
     "apiVersion": "v1",
     "data": {
@@ -49,9 +47,7 @@ Data
     },
     "type": "Opaque"
 }
-
 ```
-
 
 - String 字符串处理去除引号
 ```bash
@@ -60,4 +56,3 @@ kubectl get secrets -n test test -ojson|jq '.data.passwd'
 kubectl get secrets -n cms3 test -ojson|jq '.data.passwd'|sed 's/\"//g'
 aGVsbG8=
 ```
-
