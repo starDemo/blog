@@ -1,4 +1,3 @@
----
 title: BeagleBoneBlack折腾笔记（一）
 url: 3591.html
 id: 3591
@@ -10,8 +9,11 @@ categories:
 date: 2018-04-08 14:18:02
 tags:
 ---
+能折腾就是RT 买买买 &&拆拆拆&&研究研究研究 新玩具
+<!--more-->
 
-能折腾就是RT 买买买 &&拆拆拆&&研究研究研究 新玩具 BeagleBoneBlack Ti 的AM335X处理器，性能不高，不比树莓派 全志系列的Pi，但是Ti爸爸的资料全以及后边貌似做了SIP方案基于这个片子，所以咸鱼入一个折腾折腾 研究下嵌入式Linux。 下边正题： 首页丢参数图 ![BBvsBBB.jpg](https://elinux.org/images/f/f8/BBvsBBB.jpg) 板子特性 ![Features.jpg](https://elinux.org/images/2/2b/Features.jpg) （拖自[Wiki](https://elinux.org/Beagleboard:BeagleBoneBlack) 无卵用，详情点[Wiki](https://elinux.org/Beagleboard:BeagleBoneBlack)飞过去） 研究内建驱动的模块 参考[帖子](https://blog.csdn.net/wyt2013/article/details/16874823)看到不少东西 基本就是几个路径的内建模块
+## BeagleBoneBlack 
+Ti 的AM335X处理器，性能不高，不比树莓派 全志系列的Pi，但是Ti爸爸的资料全以及后边貌似做了SIP方案基于这个片子，所以咸鱼入一个折腾折腾 研究下嵌入式Linux。 下边正题： 首页丢参数图 ![BBvsBBB.jpg](https://elinux.org/images/f/f8/BBvsBBB.jpg) 板子特性 ![Features.jpg](https://elinux.org/images/2/2b/Features.jpg) （拖自[Wiki](https://elinux.org/Beagleboard:BeagleBoneBlack) 无卵用，详情点[Wiki](https://elinux.org/Beagleboard:BeagleBoneBlack)飞过去） 研究内建驱动的模块 参考[帖子](https://blog.csdn.net/wyt2013/article/details/16874823)看到不少东西 基本就是几个路径的内建模块
 
 *   /lib/modules/\*uname -a\*/kernel/drivers/
 *   /sys/bus/i2c /sys/bus/spi
