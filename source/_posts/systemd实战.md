@@ -2,7 +2,7 @@ title: systemd实战
 author: star liu
 copyright: false
 tags:
-  - Linux 系统维护
+  - Linux
 categories:
   - Linux
 date: 2019-03-11 14:36:00
