@@ -2,12 +2,13 @@ title: '[转]OAuth2 入门'
 author: star liu
 tags: []
 categories: []
-date: 2020-02-22 10:57:00
 copyright: false
+date: 2020-02-22 10:57:00
 ---
 最近在看Gitlab的OAouth2 文档，计划使运维平台接入Gitlab的授权认证。
 
 <!--more-->
+*转载自[cnblog-白细胞-oauth2深入介绍](https://www.cnblogs.com/Wddpct/p/8976480.html#3-oauth-2-%E7%9A%84%E6%8E%88%E6%9D%83%E6%B5%81%E7%A8%8B)*
 
 # 1. 前言
 OAuth 2 是一个授权框架，或称授权标准，它可以使第三方应用程序或客户端获得对HTTP服务上（例如 Google，GitHub ）用户帐户信息的有限访问权限。OAuth 2 通过将用户身份验证委派给托管用户帐户的服务以及授权客户端访问用户帐户进行工作。综上，OAuth 2 可以为 Web 应用 和桌面应用以及移动应用提供授权流程。
@@ -47,9 +48,11 @@ OAuth 2 标准中定义了以下几种角色：
 # 3. OAuth 2 的授权流程
 目前为止你应该对 OAuth 2 的角色有了些概念，接下来让我们来看看这几个角色之间的抽象授权流程图和相关解释。
 
+*
 请注意，实际的授权流程图会因为用户返回授权许可类型的不同而不同。但是下图大体上能反映一次完整抽象的授权流程。
+*
 
-
+![upload successful](/images/pasted-2.png)
 
 - Authrization Request
 
@@ -111,6 +114,7 @@ OAuth 2 标准中定义了以下几种角色：
 `Authorization Code` 是最常使用的一种授权许可类型，它适用于第三方应用类型为`server-side`型应用的场景。`Authorization Code`授权流程基于重定向跳转，客户端必须能够与`User-agent`（即用户的 Web 浏览器）交互并接收通过`User-agent`路由发送的实际`authorization code`值。
 
 
+![upload successful](/images/pasted-3.png)
 
 ### 1. User Authorization Request
 首先，客户端构造了一个用于请求authorization code的URL并引导User-agent跳转访问。
@@ -133,6 +137,7 @@ response_type=code
 ### 2. User Authorizes Applcation
 当用户点击上文中的示例链接时，用户必须已经在授权服务中进行登录（否则将会跳转到登录界面，不过 OAuth 2 并不关心认证过程），然后授权服务会提示用户授权或拒绝应用程序访问其帐户。以下是授权应用程序的示例：
 
+![upload successful](/images/pasted-4.png)
 
 ### 3. Authorization Code Grant
 如果用户确认授权，授权服务器将重定向`User-agent`至之前客户端提供的指向客户端的`redirect_uri`地址，并附带`code`和`state`参数（由之前客户端提供），于是客户端便能直接读取到`authorization code`值。
@@ -172,6 +177,7 @@ https://example-client.com/redirect
 相比`Authorization Code`授权流程，`Implicit`去除了请求和获得`authorization code`的过程，而用户点击授权后，授权服务器也会直接把`access token`放在`redirect_uri`中发送给`User-agent`（浏览器）。 同时第1步构造请求用户授权 `url` 中的`response_type`参数值也由 `code` 更改为 `token` 或 `id_token` 。
 
 
+![upload successful](/images/pasted-5.png)
 
 ### 1. User Authorization Request
 客户端构造的URL如下所示：
@@ -209,6 +215,7 @@ User-agent（浏览器）向客户端发送解构提取的access token。
 Resource Owner Password Credentials授权流程适用于用户与客户端具有信任关系的情况，例如设备操作系统或同一组织的内部及外部应用。用户与应用交互表现形式往往体现为客户端能够直接获取用户凭据（用户名和密码，通常使用交互表单）。
 
 
+![upload successful](/images/pasted-6.png)
 
 ### 1. Resource Owner Password Credentials From User Input
 用户向客户端提供用户名与密码作为授权凭据。
@@ -239,6 +246,7 @@ grant_type - 必选项，值恒为 password
 Client Credential是最简单的一种授权流程。客户端可以直接使用它的client credentials或其他有效认证信息向授权服务器发起获取access token的请求。
 
 
+![upload successful](/images/pasted-7.png)
 
 两步中的请求体和返回体分别如下：
 ```
@@ -261,19 +269,22 @@ grant_type - 必选项，值恒为 client_credentials
 
 这一年里读了很多书，做了很多事，虽然自觉在大学时期便接触了部分项目管理和开发的知识，但是工作后的收获仍然十分动心。微服务也好，DDD也好，或是具体的数据库理论和运维工程实践上笔者也有了更深的认识。而时至今日，笔者觉得自己是又到了重新积淀，重新迈向下一个阶段的时候。鉴权服务作为构建健壮微服务必不可少的一环（甚至可以说是第一个工程），所以以 OAuth 2 作为重启的第一篇。当然 OAuth 2 也仍然只是鉴权体系中的授权理论，更基础的认证（Authentication）理论还没有引出，希望在之后的日子里能带来更多关于鉴权相关的博文，如认证体系和功能权限设计在工程上的应用，共勉。
 
-学习和编程都是快乐的。
+**学习和编程都是快乐的。**
 
-参考资料及文献
-The OAuth 2.0 Authorization Framework
-What is the OAuth 2.0 Authorization Code Grant Type?
-An Introduction to OAuth 2
-Implicit Flow
-Response Properties
-认证授权 OAuth2授权
-名词中英文对照
-英文	中文
-Authorization Grant	授权许可
-Authorization Code	授权码
-Access Token	访问令牌
-Authorization	授权
-Authentication	认证
+# 参考资料及文献
+- [The OAuth 2.0 Authorization Framework](https://tools.ietf.org/html/rfc6749)
+- [What is the OAuth 2.0 Authorization Code Grant Type?](https://developer.okta.com/blog/2018/04/10/oauth-authorization-code-grant-type)
+- [An Introduction to OAuth 2](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2#grant-type-implicit)
+- [Implicit Flow](https://developer.okta.com/authentication-guide/implementing-authentication/implicit)
+- [Response Properties](https://developer.okta.com/docs/api/resources/oidc#authorize)
+- [认证授权 OAuth2授权](http://www.cnblogs.com/linianhui/p/oauth2-authorization.html)
+
+**名词中英文对照**
+
+| 英文                | 中文     |
+| ------------------- | -------- |
+| Authorization Grant | 授权许可 |
+| Authorization Code  | 授权码   |
+| Access Token        | 访问令牌 |
+| Authorization       | 授权     |
+| Authentication      | 认证     |
